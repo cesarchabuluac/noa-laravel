@@ -27,7 +27,6 @@
             <div class="card-header border-bottom">
                 <h4 class="mb-0">Información del Usuario</h4>
             </div>
-            {{ $errors }}
             <form action="{{ route('users.update', $user->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
                 @csrf
